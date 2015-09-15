@@ -20,8 +20,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
 	@IBOutlet weak var libsTextView: UITextView!
 	@IBOutlet weak var numberLabel: UILabel!
 	@IBOutlet weak var numberSliderValue: UISlider!
+
+	@IBOutlet weak var sliderLabelRightConstraint: NSLayoutConstraint!
 	
 	@IBAction func numberSlider(sender: AnyObject) {
+	
+		sliderLabelRightConstraint.constant = 282 - (28.2 * CGFloat(numberSliderValue.value))
 		numberLabel.text = "\(Int(numberSliderValue.value))"
 	}
 	
@@ -38,7 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 			place = "somewhere"
 		}
 
-		let adlib = "Once upon a time, there was a \(singularNounTextField.text!) roaming around a \(place). It \(pastTenseVerbTextField.text!) until it was so tired, it collapsed onto \(numberLabel.text!) \(pluralNounTextField.text!), and then shouted, \"\(phraseTextField.text!)!\" \n\n The end. "
+		let adlib = "Once upon a time, there was a \(singularNounTextField.text!) roaming around a \(place). It \(pastTenseVerbTextField.text!) until it was so tired, it collapsed onto \(numberLabel.text!) \(pluralNounTextField.text!), and then shouted, \"\(phraseTextField.text!)!\" The end. "
 		
 		libsTextView.text = adlib
 	}
