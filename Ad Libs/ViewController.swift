@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 	func textFieldShouldReturn(textField: UITextField) -> Bool {
 		
-		let index = find(textFields, textField)
+		let index = textFields.indexOf(textField)
 		textField.resignFirstResponder()
 		
 		if index < textFields.count - 1 {

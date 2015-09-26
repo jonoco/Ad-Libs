@@ -188,6 +188,8 @@
 		BB5AAD181BA8A3C20049B4A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Joshua Cox";
 				TargetAttributes = {
@@ -451,6 +453,7 @@
 				BB5AAD411BA8A3C20049B4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB5AAD421BA8A3C20049B4A2 /* Build configuration list for PBXNativeTarget "Ad LibsTests" */ = {
 			isa = XCConfigurationList;
@@ -459,6 +462,7 @@
 				BB5AAD441BA8A3C20049B4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
